@@ -8,8 +8,8 @@ interface Products {
 }
 
 const DataFetch = async () => {
-  let res = await fetch("https://jsonplaceholder.typicode.com/todos");
-  let posts: Products[] = await res.json();
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const posts: Products[] = await res.json();
   console.log(posts);
 
   return (
